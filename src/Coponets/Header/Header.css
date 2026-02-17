@@ -1,0 +1,144 @@
+.heder-cn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heder-cn ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    font-size: 20px;
+}
+
+.search-input {
+    position: absolute;
+    right: 100%;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+
+.heder-cn ul li a {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3D3D3D;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.heder-cn ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #46A358;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.heder-cn ul li a:hover {
+    color: #46A358;
+}
+
+.heder-cn ul li a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    background-color: #46A358;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3a8f4a;
+    transform: translateY(-2px);
+}
+
+.login {
+    font-size: 15px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#fff;
+    box-shadow: 1px 1px 1px 1px  rgba(128, 128, 128, 0.395);
+    z-index: 100;
+}
+
+
+@media (max-width: 992px) {
+
+    .heder-cn ul {
+        gap: 20px;
+    }
+
+    .btn {
+        width: 90px;
+        height: 32px;
+        font-size: 13px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .heder-cn {
+        padding: 10px 20px;
+    }
+
+    .heder-cn ul {
+        display: none;
+    }
+
+    .search-input {
+        width: 120px;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .btn {
+        display: none;
+    }
+
+    .search-input {
+        width: 100px;
+        padding: 4px 8px;
+    }
+}

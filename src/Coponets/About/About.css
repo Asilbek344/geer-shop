@@ -1,0 +1,192 @@
+.fet {
+    display: flex;
+    align-items: center;
+    width: 596px;
+    height: 250px;
+    top: 2101px;
+    left: 120px;
+    opacity: 1;
+    gap: 30px;
+
+}
+
+.Zet {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 596px;
+    height: 250px;
+    top: 2101px;
+    left: 734px;
+    opacity: 1;
+
+}
+
+
+.a-b {
+    display: flex;
+    align-items: center;
+}
+
+.tex-f h1 {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: rgba(61, 61, 61, 1);
+
+}
+
+.tex-f p {
+    font-family: " Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: rgba(61, 61, 61, 1);
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.btn-3 {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 28px;
+    background: #46A358;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.btn-3 svg {
+    transition: transform 0.3s ease;
+}
+
+
+.btn-3:hover {
+    background: #3d8f4c;
+    box-shadow: 0 8px 20px rgba(70, 163, 88, 0.4);
+}
+
+
+.btn-3:hover svg {
+    transform: translateX(6px);
+}
+
+
+.btn-3:active {
+    transform: scale(0.96);
+}
+
+.tex-z p {
+    font-family: " Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: rgba(61, 61, 61, 1);
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.tex-z h1 {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: rgba(61, 61, 61, 1);
+}
+
+@media (max-width: 1200px) {
+  .fet,
+  .Zet {
+    width: 100%;
+  }
+
+  .a-b {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .a-b {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fet,
+  .Zet {
+    height: auto;
+    padding: 20px;
+  }
+
+  .fet img,
+  .Zet img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .fet,
+  .Zet {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tex-f,
+  .tex-z {
+    align-items: center;
+  }
+
+  .fet img,
+  .Zet img {
+    width: 180px;
+  }
+
+  .btn-3 {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fet img,
+  .Zet img {
+    width: 150px;
+  }
+
+  .tex-f h1,
+  .tex-z h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .tex-f p,
+  .tex-z p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .btn-3 {
+    width: 100%;
+    justify-content: center;
+  }
+}

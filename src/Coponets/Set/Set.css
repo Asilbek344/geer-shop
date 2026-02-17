@@ -1,0 +1,20 @@
+.set-cn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.set-cn ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.set-cn ul li a {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(61, 61, 61, 1);
+}

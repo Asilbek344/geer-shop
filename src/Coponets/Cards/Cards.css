@@ -1,0 +1,197 @@
+#Cards {
+  width: 300px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.cat-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.cat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #3d3d3d;
+}
+
+.cat-list li:hover {
+  color: #46A358;
+}
+
+.cat-list .active {
+  color: #46A358;
+  font-weight: 600;
+}
+
+.sale-img {
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 6px;
+}
+
+.card-1 {
+  position: relative;
+  width: 350px;
+  overflow: hidden;
+}
+
+.card-1 img {
+  width: 100%;
+  display: block;
+}
+
+
+.icons-1 {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  transition: 0.4s ease;
+}
+
+
+.card-1:hover .icons-1 {
+  bottom: 80px;
+}
+
+
+.icons-1 svg {
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.icons-1 svg:hover {
+  background: green;
+  color: white;
+}
+
+.card-cnm {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.catigors-m {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  padding-bottom: 70px;
+}
+
+.card-1 h1 {
+  font-family: "Cera Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: rgba(61, 61, 61, 1);
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.card-1 p {
+  font-family: "Cera Pro";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: rgba(70, 163, 88, 1);
+  text-align: center;
+
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .card-cnm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catigors-m {
+    gap: 100px;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .container.card-cn {
+    padding: 0 15px;
+  }
+
+
+  .card-cnm {
+    grid-template-columns: 1fr;
+  }
+
+  .card-1 {
+    width: 100%;
+  }
+
+ 
+  .catigors-m {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Cards {
+    width: 100%;
+    max-width: 400px;
+  }
+
+
+  .card-1:hover .icons-1 {
+    bottom: 100px;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .card-1 h1 {
+    font-size: 14px;
+  }
+
+  .card-1 p {
+    font-size: 16px;
+  }
+
+  .icons-1 svg {
+    font-size: 28px;
+    padding: 6px;
+  }
+
+  .cat-title {
+    font-size: 18px;
+  }
+
+}

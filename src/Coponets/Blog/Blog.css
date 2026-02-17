@@ -1,0 +1,113 @@
+.Ser {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(61, 61, 61, 1);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Wer {
+    padding-bottom: 20px;
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(114, 114, 114, 1);
+}
+
+.blog-tex {
+    width: 268px;
+    height: 167px;
+    top: 2769px;
+    left: 119px;
+    opacity: 1;
+    background-color: rgb(248, 245, 245);
+    padding: 10px;
+}
+
+.blog-tex h2 {
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(70, 163, 88, 1);
+}
+
+.blog-tex h1 {
+    font-family: "Cera Pro";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: rgba(61, 61, 61, 1);
+}
+
+.blog-tex p {
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: rgba(114, 114, 114, 1);
+}
+
+.blog-tex h3 {
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(61, 61, 61, 1);
+}
+
+.bl-icon {
+    font-size: 10px;
+    color: rgba(61, 61, 61, 1);
+}
+.blog-cn{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+
+@media (max-width: 992px) {
+    .blog-cn {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-cn {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .blog-tex {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Ser {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .Wer {
+        font-size: 13px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

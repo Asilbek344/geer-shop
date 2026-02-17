@@ -18,3 +18,37 @@
     letter-spacing: 0%;
     color: rgba(61, 61, 61, 1);
 }
+/* Tablet */
+@media (max-width: 992px) {
+    .set-cn {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .set-cn ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .set-cn img {
+        width: 120px;
+    }
+
+    .set-cn ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .set-cn ul li a {
+        font-size: 16px;
+    }
+
+    .set-cn ul svg {
+        font-size: 20px;
+    }
+}
